@@ -75,7 +75,8 @@ def visualize_lines(frame, lines):
     if lines is not None:
         for x1, y1, x2, y2 in lines:
             # Draws lines between two coordinate with green color and 5 thickness
-            cv.line(lines_visualize, (x1, y1), (x2, y2), (0, 255, 0), 5)
+            cv.line(lines_visualize, (x1, y1), (0, 0), (0, 255, 0), 5)
+            cv.line(lines_visualize, (x2, y2), (0, 0), (255,0, 0), 5)
     return lines_visualize
 
 # TODO
